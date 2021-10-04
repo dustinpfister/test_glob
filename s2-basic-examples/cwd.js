@@ -1,13 +1,10 @@
-var glob = require('glob'),
-
+const glob = require('glob'),
 // some options
 options = {
-
-    cwd: 'node_modules'
+    cwd: '../'
 },
-
 // for Files
-forFiles = function(err,files){ console.log(files);};
+forFiles = (err,files) => console.log(files);
 
 // glob it.
 glob('**/*.md', options, forFiles);
