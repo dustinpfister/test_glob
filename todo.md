@@ -3,8 +3,8 @@
 ## () - new s5-example section on a script that will count internal links
 * start the section folder
 
-## () new s4-promises section
-* have an example where promises are used
+## ( done 10/04/2021 ) new s4-promises section
+* (done) have an example where promises are used
 
 ## ( done 10/04/2021 ) - new s3-absolute-paths section on __dirname global, paths module, process.cwd, ect
 * (done) start a new section where the focus will be on the \_\_dirname global
