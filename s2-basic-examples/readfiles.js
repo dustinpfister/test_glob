@@ -1,7 +1,7 @@
-let glob = require('glob'),
+const glob = require('glob'),
 fs = require('fs');
 
-let readFiles = function (pat, forFile) {
+const readFiles = function (pat, forFile) {
     // pattern
     pat = pat || '*.js';
     // for file method
