@@ -1,7 +1,11 @@
 # test_glob todo
 
 ## () - new s5-example section on a script that will count internal links
-* start the section folder
+* (done) start the section folder
+* have patterns that can be used to get full link text from markdown
+```
+https://stackoverflow.com/questions/37462126/regex-match-markdown-link
+```
 
 ## ( done 10/04/2021 ) new s4-promises section
 * (done) have an example where promises are used
