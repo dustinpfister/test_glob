@@ -2,42 +2,32 @@ let glob = require('glob'),
 fs = require('fs');
 
 let readFiles = function (pat, forFile) {
-
+    // pattern
     pat = pat || '*.js';
-    forFile = forFile || function (content) {
+    // for file method
+    forFile = forFile || function (content, file) {
+        console.log('');
+        console.log(file);
+        console.log('*****');
         console.log(content);
+        console.log('*****')
     };
-
-    glob('*.js', function (err, files) {
-
+    // using glob
+    glob(pat, function (err, files) {
         if (err) {
-
             console.log(err);
-
         } else {
-
             files.forEach(function (file) {
-
                 fs.readFile(file, function (err, data) {
-
                     if (err) {
-
                         console.log(err);
-
                     } else {
-
-                        forFile(data.toString());
-
+                        forFile(data.toString(), file);
                     }
-
                 });
-
             });
-
         }
-
     });
-
 };
 
 readFiles();
