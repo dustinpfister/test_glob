@@ -10,8 +10,7 @@ const getLinkCounts = (text) => {
         external: external === null ? 0 : external.length
     }
 };
-
+// seems to work okay
 let text = 'Sample markdown text [with links](http://bar.net), that are both [internal links](/baz), and [external links](https://foo.com)';
-
 console.log(getLinkCounts(text));
 // { internal: 2, external: 1 }
