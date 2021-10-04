@@ -1,6 +1,5 @@
 const glob = require('glob');
 
-
 glob('*.js', (err, files) => {
     if (err) {
         console.log(err);
@@ -9,5 +8,4 @@ glob('*.js', (err, files) => {
         console.log(files);
     }
 });
-
 
